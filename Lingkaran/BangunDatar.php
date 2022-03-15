@@ -1,7 +1,7 @@
 <?php
 
 abstract class BangunDatar{
-    abstract function hitungkeliling($alas,$tinggi);
-    abstract function hitungluas($alas,$tinggi);
+    abstract function hitungkeliling($r);
+    abstract function hitungluas($r);
 }
 ?>

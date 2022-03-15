@@ -1,6 +1,6 @@
 <?php
-
-    class Jajargenjang{
+include 'BangunDatar.php';
+    class Jajargenjang extends BangunDatar{
 
         function hitungkeliling($a,$b){
             if ($a == '' && $b == '' ) {

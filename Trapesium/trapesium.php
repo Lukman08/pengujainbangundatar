@@ -1,6 +1,6 @@
 <?php
-
-    class trapesium{
+include'BangunDatar.php';
+    class Trapesium extends BangunDatar{
 
         function hitungkeliling($sisi){
             if ($sisi == '' ) {

@@ -1,6 +1,6 @@
 <?php
-
-    class lingkaran{
+include 'BangunDatar.php';
+    class Lingkaran extends BangunDatar{
 
         function hitungkeliling($r){
             if ($r == '') {

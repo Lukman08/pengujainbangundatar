@@ -5,21 +5,21 @@
 use PHPUnit\Framework\TestCase;
 
 // Class yang mau di TEST.
-require_once "lingkaran.php";
+require_once "Lingkaran.php";
 
 // Class untuk run Testing.
-class lingkarantest extends TestCase
+class LingkaranTest extends TestCase
 {
 
     public static function setUpBeforeClass(): void
     {
-        echo "Eksekusi sebleum pengjujian \n";
+        echo "Eksekusi sebelum penujian\n";
     }
 
     public function testHitungkeliling()
     {
         // Kita pakai class yang mau kita test.
-        $lingkaran = new lingkaran();
+        $lingkaran = new Lingkaran();
         
         // Kita masukan parameter 4 kata, yang harusnya dapat output 4.
         $r = 4; // 4 Kata ..
@@ -33,7 +33,7 @@ class lingkarantest extends TestCase
     public function testHitungkelilingKosong()
     {
         // Kita pakai class yang mau kita test.
-        $lingkaran = new lingkaran();
+        $lingkaran = new Lingkaran();
         
         // Kita masukan parameter 4 kata, yang harusnya dapat output 4.
         $r = '';
@@ -47,7 +47,7 @@ class lingkarantest extends TestCase
     public function testHitungLuas()
     {
         // Kita pakai class yang mau kita test.
-        $lingkaran = new lingkaran();
+        $lingkaran = new Lingkaran();
         
         // Kita masukan parameter 4 kata, yang harusnya dapat output 4.
         $r = 2; // 4 Kata ..
@@ -61,7 +61,7 @@ class lingkarantest extends TestCase
     public function testHitungLuasKosong()
     {
         // Kita pakai class yang mau kita test.
-        $lingkaran = new lingkaran();
+        $lingkaran = new Lingkaran();
         
         // Kita masukan parameter 4 kata, yang harusnya dapat output 4.
         $r = ''; // 4 Kata ..
@@ -74,7 +74,7 @@ class lingkarantest extends TestCase
 
     public static function tearDownAfterClass(): void
     {
-        echo "\n Eksekusi setelah pengjujian \n";
+        echo "\n Eksekusi setelah pengujian\n";
     }
 
 }

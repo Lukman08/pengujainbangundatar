@@ -1,6 +1,6 @@
 <?php
-
-    class segitiga{
+include 'BangunDatar.php';
+    class Segitiga extends BangunDatar{
 
         function hitungkeliling($a,$b,$c){
             if ($a == '' && $b == '' && $c == '') {

@@ -5,21 +5,21 @@
 use PHPUnit\Framework\TestCase;
 
 // Class yang mau di TEST.
-require_once "layanglayang.php";
+require_once "LayangLayang.php";
 
 // Class untuk run Testing.
-class layanglayangtest extends TestCase
+class LayangLayangTest extends TestCase
 {
 
     public static function setUpBeforeClass(): void
     {
-        echo "Eksekusi sebleum pengjujian \n";
+        echo "Eksekusi sebelum pengjujian\n";
     }
 
     public function testHitungkeliling()
     {
         // Kita pakai class yang mau kita test.
-        $layanglayang = new layanglayang();
+        $layanglayang = new LayangLayang();
         
         // Kita masukan parameter 4 kata, yang harusnya dapat output 4.
         $a = 4; // 4 Kata ..
@@ -34,7 +34,7 @@ class layanglayangtest extends TestCase
     public function testHitungkelilingKosong()
     {
         // Kita pakai class yang mau kita test.
-        $layanglayang = new layanglayang();
+        $layanglayang = new LayangLayang();
         
         // Kita masukan parameter 4 kata, yang harusnya dapat output 4.
         $a = ''; // 4 Kata ..
@@ -49,7 +49,7 @@ class layanglayangtest extends TestCase
     public function testHitungLuas()
     {
         // Kita pakai class yang mau kita test.
-        $layanglayang = new layanglayang();
+        $layanglayang = new LayangLayang();
         
         // Kita masukan parameter 4 kata, yang harusnya dapat output 4.
         $d1 = 5; // 4 Kata ..
@@ -64,7 +64,7 @@ class layanglayangtest extends TestCase
     public function testHitungLuasKosong()
     {
         // Kita pakai class yang mau kita test.
-        $layanglayang = new layanglayang();
+        $layanglayang = new LayangLayang();
         
         // Kita masukan parameter 4 kata, yang harusnya dapat output 4.
         $d1 = ''; // 4 Kata ..
@@ -78,7 +78,7 @@ class layanglayangtest extends TestCase
 
     public static function tearDownAfterClass(): void
     {
-        echo "\n Eksekusi setelah pengjujian \n";
+        echo "\n Eksekusi setelah pengujian\n";
     }
 
 }
